@@ -11,7 +11,7 @@ import { EVENT_NAMES } from '../constants/event-constants';
 export class WindowComponent {
   constructor(private eventBus: EventBusService) {}
 
-  OnDownloadResumeClick(): void {
+  playClickSound(): void {
     this.eventBus.cast(EVENT_NAMES.CLICK);
   }
 }

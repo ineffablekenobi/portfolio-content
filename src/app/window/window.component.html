@@ -5,33 +5,68 @@
       <h2>Software Engineer</h2>
     </div>
 
-    <p-button
-      class="download-resume"
-      size="large"
-      [outlined]="true"
-      (click)="OnDownloadResumeClick()"
-      severity="contrast"
-      [rounded]="true"
-    >
-      Download My Resume
-    </p-button>
+    <div class="download-resume flex justify-content-center">
+      <p-button
+        size="large"
+        [outlined]="true"
+        (click)="playClickSound()"
+        severity="contrast"
+        [rounded]="true"
+      >
+        Download My Resume
+      </p-button>
+    </div>
 
     <nav>
       <ul>
-        <li><a routerLink="/about" routerLinkActive="active">About</a></li>
         <li>
-          <a routerLink="/education" routerLinkActive="active">Education</a>
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >About</a
+          >
         </li>
         <li>
-          <a routerLink="/experience" routerLinkActive="active">Experience</a>
+          <a
+            routerLink="/education"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Education</a
+          >
         </li>
         <li>
-          <a routerLink="/projects" routerLinkActive="active">Projects</a>
+          <a
+            routerLink="/experience"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Experience</a
+          >
         </li>
         <li>
-          <a routerLink="/research" routerLinkActive="active">Research</a>
+          <a
+            routerLink="/projects"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Projects</a
+          >
         </li>
-        <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li>
+          <a
+            routerLink="/research"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Research</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/contact"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Contact</a
+          >
+        </li>
       </ul>
     </nav>
   </div>

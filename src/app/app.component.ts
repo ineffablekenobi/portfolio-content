@@ -3,6 +3,7 @@ import { SoundService } from './services/sound.service';
 import { EventBusService } from './services/event-bus.service';
 import { EVENT_NAMES } from './constants/event-constants';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -14,13 +15,10 @@ export class AppComponent {
 
   private subscriptions: Subscription;
 
-  onCloseClick() {
-    window.location.href = '/'; // Assuming the root is at the base URL
-  }
-
   constructor(
     private soundService: SoundService,
-    private eventBusService: EventBusService
+    private eventBusService: EventBusService,
+    private router: Router
   ) {
     this.subscriptions = new Subscription();
   }
@@ -35,5 +33,11 @@ export class AppComponent {
 
   ngOnDestroy() {
     this.subscriptions.unsubscribe();
+  }
+
+  onCloseClick() {
+    this.soundService.playClickSound();
+    //window.location.href = '/'; // Assuming the root is at the base URL
+    this.router.navigate([`/`]);
   }
 }
