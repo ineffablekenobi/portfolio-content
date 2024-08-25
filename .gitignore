@@ -1,0 +1,48 @@
+# Compiled output
+/dist
+/out-tsc
+
+# Dependencies
+/node_modules
+
+# Angular specific
+/.angular
+
+# IDEs and editors
+/.idea
+/.vscode
+
+# Environment files
+/src/environments/*.ts
+
+# Log files
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Coverage reports
+/coverage
+
+# Build artifacts
+*.tgz
+*.gz
+*.zip
+*.tar
+*.rar
+*.7z
+*.tar.gz
+
+# Local development configurations
+/.local
+
+# npm package-lock files (optional)
+package-lock.json
