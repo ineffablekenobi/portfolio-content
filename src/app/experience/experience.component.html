@@ -1,0 +1,9 @@
+<h2>Professional Experience</h2>
+<p-timeline [value]="experiences">
+  <ng-template pTemplate="content" let-experience>
+    <p-card [header]="experience.company" [subheader]="experience.role">
+      <p>{{ experience.duration }}</p>
+      <p>{{ experience.description }}</p>
+    </p-card>
+  </ng-template>
+</p-timeline>
