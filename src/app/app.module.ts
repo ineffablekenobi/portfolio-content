@@ -14,6 +14,7 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { TimelineModule } from 'primeng/timeline';
     AppRoutingModule,
     CardModule,
     TimelineModule,
+    ButtonModule
   ],
   providers: [
     provideClientHydration()

@@ -6,9 +6,10 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ResearchComponent } from './research/research.component';
 import { ContactComponent } from './contact/contact.component';
+import { WindowComponent } from './window/window.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '', component: WindowComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
@@ -19,6 +20,6 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
