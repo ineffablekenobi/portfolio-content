@@ -9,9 +9,11 @@
         *ngFor="let publication of publications"
       >
         <h2 class="header-text">{{ publication.title }}</h2>
-        <h4 class="card-subtitle">{{ publication.type }}</h4>
-        <h4 class="card-subtitle">{{ publication.affiliation }}</h4>
-        <p class="project-desc">{{ publication.summary }}</p>
+        <div class="subheaders">
+          <h4 class="card-subtitle">{{ publication.type }}</h4>
+          <h4 class="card-subtitle">{{ publication.affiliation }}</h4>
+        </div>
+        <p class="publication-desc">{{ publication.summary }}</p>
         <p class="link" (click)="goToPublication(publication)">
           Click to see publication
         </p>

@@ -50,6 +50,10 @@ p.link {
   margin-bottom: 10px;
 }
 
+.subheaders {
+  margin-bottom: 20px;
+}
+
 .header-text {
   text-align: center;
   cursor: pointer;
@@ -61,6 +65,14 @@ p.link {
   flex-wrap: wrap;
   justify-content: center; // Center cards horizontally
   gap: 1rem; // Space between cards
+}
+
+.publication-desc {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: justify;
+  font-family: "courier-prime", monospace;
 }
 
 // Media query for responsive design if needed
