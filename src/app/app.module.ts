@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +21,7 @@ import { ButtonModule } from 'primeng/button';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,7 @@ import { MessageService } from 'primeng/api';
     ProjectsComponent,
     ResearchComponent,
     ContactComponent,
-    SideNavComponent
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,12 +44,10 @@ import { MessageService } from 'primeng/api';
     CardModule,
     TimelineModule,
     ButtonModule,
-    ToastModule
+    ToastModule,
+    TooltipModule,
   ],
-  providers: [
-    provideClientHydration(),
-    MessageService
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideClientHydration(), MessageService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
