@@ -11,7 +11,7 @@ export class EducationComponent {
       title: 'High School',
       institution: 'Goverment Laboratory High School',
       year: '2006 - 2018',
-      logo: '../../assets/school-logo.png',
+      logo: 'assets/school-logo.png',
       description:
         'Completed high school with a focus on science, participating in various Olympiads and problem-solving competitions.',
     },
