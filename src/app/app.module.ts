@@ -22,6 +22,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { TooltipModule } from 'primeng/tooltip';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TooltipModule } from 'primeng/tooltip';
     ButtonModule,
     ToastModule,
     TooltipModule,
+    FormsModule,
   ],
   providers: [provideClientHydration(), MessageService],
   bootstrap: [AppComponent],

@@ -1,1 +1,41 @@
-<p>contact works!</p>
+<div class="flex-container">
+  <app-side-nav class="side-nav"></app-side-nav>
+
+  <div class="contact-container">
+    <div class="contact-form">
+      <h2>Contact Us</h2>
+      <form (ngSubmit)="sendEmail()">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          [(ngModel)]="contactForm.name"
+          name="name"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          [(ngModel)]="contactForm.email"
+          name="email"
+          required
+        />
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          [(ngModel)]="contactForm.message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<p-toast></p-toast>
