@@ -14,6 +14,6 @@ Crafting innovative software solutions at [Enosis Solution](https://www.enosisbd
 ### Connect with me
 
 - [LinkedIn](https://bd.linkedin.com/in/swapnil-sharma-sarker-36357a17b)
-- [Google Scholar](https://scholar.google.co.in/citations?user=4Zr_spQAAAAJ&hl=en)
-- [GitHub](https://github.com/geffenlab/contrast_behavior)
+- [Google Scholar](https://scholar.google.co.in/citations?hl=en&user=PblERlYAAAAJ)
+- [GitHub](https://github.com/ineffablekenobi)
 - [Codeforces](https://codeforces.com/profile/ineffablekenobi)

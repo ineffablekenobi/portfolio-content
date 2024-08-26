@@ -14,4 +14,9 @@ export class WindowComponent {
   playClickSound(): void {
     this.eventBus.cast(EVENT_NAMES.CLICK);
   }
+
+  onDowloadClick(): void {
+    this.playClickSound();
+    window.open('../../assets/Swapnil-Sharma-Sarker-Resume.pdf', '_blank');
+  }
 }

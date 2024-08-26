@@ -1,8 +1,50 @@
 <div class="container flex justify-content-center mt-3">
   <div class="xp-window card">
     <div class="xp-window-header">
-      <span>{{ title }}</span>
-      <button (click)="onCloseClick()" class="xp-close-btn">X</button>
+      <span class="title">{{ title }}</span>
+
+      <div class="social-tabs d-flex justify-content-center">
+        <a
+          href="https://www.linkedin.com/in/swapnil-sharma-sarker-36357a17b/"
+          target="_blank"
+          class="social-tab d-flex align-items-center"
+          title="LinkedIn"
+        >
+          <i class="fab fa-linkedin fa-lg me-2"></i>
+          <span class="d-none d-sm-inline">LinkedIn</span>
+        </a>
+        <a
+          href="https://github.com/ineffablekenobi"
+          target="_blank"
+          class="social-tab d-flex align-items-center"
+          title="GitHub"
+        >
+          <i class="fab fa-github fa-lg me-2"></i>
+          <span class="d-none d-sm-inline">GitHub</span>
+        </a>
+        <a
+          href="https://codeforces.com/profile/ineffablekenobi"
+          target="_blank"
+          class="social-tab d-flex align-items-center"
+          title="CodeForces"
+        >
+          <i class="fas fa-code fa-lg me-2"></i>
+          <span class="d-none d-sm-inline">CodeForces</span>
+        </a>
+        <a
+          href="https://scholar.google.co.in/citations?hl=en&user=PblERlYAAAAJ"
+          target="_blank"
+          class="social-tab d-flex align-items-center"
+          title="Google Scholar"
+        >
+          <i class="fas fa-graduation-cap fa-lg me-2"></i>
+          <span class="d-none d-sm-inline">Scholar</span>
+        </a>
+      </div>
+
+      <div class="xp-close-btn-wrapper">
+        <button (click)="onCloseClick()" class="xp-close-btn">X</button>
+      </div>
     </div>
 
     <router-outlet></router-outlet>
