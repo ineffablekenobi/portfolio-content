@@ -10,14 +10,21 @@
   box-sizing: border-box; /* Ensure padding does not affect the width */
 }
 
-.p-card {
-  max-width: 500px;
-  margin: 20px auto; /* Adds space around each card */
-  padding: 20px; /* Optional: Adds padding inside the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-  text-align: justify;
+::ng-deep .p-card {
+  width: 600px;
+  background: #ffffff; // Light gray background
+  border: 2px solid #565d60; // Gray border
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7),
+    1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background: #ffffff; // Slightly lighter gray on hover
+    border-color: #8a8a8a; // Darker gray border on hover
+  }
 }
+
 
 ::ng-deep {
   .p-timeline-left .p-timeline-event-content {
