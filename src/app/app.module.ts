@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
 import { ButtonModule } from 'primeng/button';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ButtonModule } from 'primeng/button';
     ExperienceComponent,
     ProjectsComponent,
     ResearchComponent,
-    ContactComponent
+    ContactComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
