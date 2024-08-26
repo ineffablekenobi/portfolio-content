@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.side-nav-wrapper {
+  margin: 0px 30px;
+}
+
 .side-nav-wrapper nav ul li a {
   text-decoration: none;
   font-family: "lores-15-bold-alt-oakland", monospace;
@@ -11,8 +15,8 @@
   font-size: 21px;
 }
 
-.side-nav-wrapper nav ul{
-    padding: 5px;
+.side-nav-wrapper nav ul {
+  padding: 5px;
 }
 
 .side-nav-wrapper nav ul li a:hover {
