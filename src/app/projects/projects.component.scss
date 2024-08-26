@@ -11,12 +11,6 @@
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem; // Space between cards
-}
-
-.project-cards {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center; // Center cards horizontally
   gap: 1rem; // Space between cards
 }
@@ -24,14 +18,14 @@
 ::ng-deep .p-card {
   width: 600px;
   background: #ffffff; // Light gray background
-  border: 2px solid #a0a0a0; // Gray border
+  border: 2px solid #565d60; // Gray border
   border-radius: 5px;
   box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7),
     1px 1px 3px rgba(0, 0, 0, 0.5);
   padding: 10px;
   cursor: pointer;
   &:hover {
-    background: #e0e0e0; // Slightly lighter gray on hover
+    background: #ffffff; // Slightly lighter gray on hover
     border-color: #8a8a8a; // Darker gray border on hover
   }
 }

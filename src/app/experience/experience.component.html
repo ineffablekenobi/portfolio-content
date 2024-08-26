@@ -4,13 +4,13 @@
   <div class="experience-container">
     <p-timeline [value]="experiences">
       <ng-template pTemplate="content" let-ed>
-        <p-card>
+        <p-card (click)="redirectToInstitution()">
           <div class="flex flex-column">
-            <h2 class="header-text" (click)="redirectToInstitution()">
+            <h2 class="header-text">
               {{ ed.institution }}
             </h2>
             <h4 class="degree">{{ ed.location }}</h4>
-            <figure class="responsive-image" (click)="redirectToInstitution()">
+            <figure class="responsive-image">
               <img
                 class="flex justify-content-center"
                 [src]="ed.logo"

@@ -1,1 +1,23 @@
-<p>research works!</p>
+<div class="flex-container">
+  <app-side-nav class="side-nav"></app-side-nav>
+
+  <div class="research-container">
+    <div class="publication-cards">
+      <p-card
+        (click)="goToPublication(publication)"
+        pTooltip="Click to see the publication"
+        *ngFor="let publication of publications"
+      >
+        <h2 class="header-text">{{ publication.title }}</h2>
+        <div class="subheaders">
+          <h4 class="card-subtitle">{{ publication.type }}</h4>
+          <h4 class="card-subtitle">{{ publication.affiliation }}</h4>
+        </div>
+        <p class="publication-desc">{{ publication.summary }}</p>
+        <p class="link" (click)="goToPublication(publication)">
+          Click to see publication
+        </p>
+      </p-card>
+    </div>
+  </div>
+</div>
