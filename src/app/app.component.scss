@@ -1,0 +1,61 @@
+/* Body style to center the content and apply a retro look */
+body {
+    background-color: #b0c4de; /* Windows XP desktop blue */
+    font-family: "Tahoma", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Window style */
+.xp-window {
+    background-color: #ffffff; /* light grey */
+    border: 2px solid #000080; /* dark blue border */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+    width: 80vw;
+    text-align: center;
+}
+
+/* Footer style */
+footer {
+    font-size: 12px;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Header style */
+.xp-window-header {
+    background-color: #000080; /* Windows XP title bar blue */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #808080; /* Adds a subtle border to the bottom */
+}
+
+.xp-window-header span {
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "Tahoma", sans-serif; /* Font similar to Windows XP */
+}
+
+/* Close button style */
+.xp-close-btn {
+    background-color: #c00; /* Red background */
+    color: white;
+    border: none;
+    padding: 2px 10px;
+    font-weight: bold;
+    font-family: "Tahoma", sans-serif; /* Font similar to Windows XP */
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.xp-close-btn:hover {
+    background-color: #ff3333; /* Lighter red on hover */
+}

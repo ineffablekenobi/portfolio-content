@@ -1,1 +1,12 @@
-<app-desktop></app-desktop>
+<div class="container flex justify-content-center mt-3">
+  <div class="xp-window card">
+    <div class="xp-window-header">
+      <span>{{ title }}</span>
+      <button (click)="onCloseClick()" class="xp-close-btn">X</button>
+    </div>
+
+    <router-outlet></router-outlet>
+
+    <footer>&copy; Copyright 2024 Swapnil Sharma Sarker</footer>
+  </div>
+</div>

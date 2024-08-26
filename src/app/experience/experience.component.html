@@ -1,9 +1,41 @@
-<h2>Professional Experience</h2>
-<p-timeline [value]="experiences">
-  <ng-template pTemplate="content" let-experience>
-    <p-card [header]="experience.company" [subheader]="experience.role">
-      <p>{{ experience.duration }}</p>
-      <p>{{ experience.description }}</p>
-    </p-card>
-  </ng-template>
-</p-timeline>
+<div class="flex-container">
+  <app-side-nav class="side-nav"></app-side-nav>
+
+  <div class="experience-container">
+    <p-timeline [value]="experiences">
+      <ng-template pTemplate="content" let-ed>
+        <p-card>
+          <div class="flex flex-column">
+            <h2 class="header-text" (click)="redirectToInstitution()">
+              {{ ed.institution }}
+            </h2>
+            <h4 class="degree">{{ ed.location }}</h4>
+            <figure class="responsive-image" (click)="redirectToInstitution()">
+              <img
+                class="flex justify-content-center"
+                [src]="ed.logo"
+                width="100px"
+                height="auto"
+                alt="Institution logo"
+              />
+            </figure>
+          </div>
+          <p>
+            {{ ed.description }}
+          </p>
+
+          <a
+            routerLink="/projects"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >See Projects under {{ ed.institution }}</a
+          >
+        </p-card>
+      </ng-template>
+      <ng-template pTemplate="opposite" let-ed>
+        <h4 class="degree">{{ ed.title }}</h4>
+        <h4 class="degree">{{ ed.year }}</h4>
+      </ng-template>
+    </p-timeline>
+  </div>
+</div>

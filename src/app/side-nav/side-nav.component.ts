@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { SoundService } from '../services/sound.service';
 import { EventBusService } from '../services/event-bus.service';
 import { EVENT_NAMES } from '../constants/event-constants';
 
 @Component({
-  selector: 'app-window',
-  templateUrl: './window.component.html',
-  styleUrl: './window.component.scss',
+  selector: 'app-side-nav',
+  templateUrl: './side-nav.component.html',
+  styleUrl: './side-nav.component.scss',
 })
-export class WindowComponent {
+export class SideNavComponent {
   constructor(private eventBus: EventBusService) {}
 
-  playClickSound(): void {
+  playClickSound() {
     this.eventBus.cast(EVENT_NAMES.CLICK);
   }
 }

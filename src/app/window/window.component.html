@@ -1,20 +1,73 @@
 <div class="xp-window">
-    <div class="xp-window-header">
-      <span>Swapnil Sharma Sarker - Portfolio</span>
-      <button class="xp-close-btn">X</button>
+  <div class="xp-window-content flex flex-column justify-content-around">
+    <div class="xp-window-content-header">
+      <h1>Swapnil Sharma Sarker</h1>
+      <h2>Software Engineer</h2>
     </div>
-    <div class="xp-window-content">
-      <nav>
-        <ul>
-          <li><a routerLink="/about" routerLinkActive="active">About</a></li>
-          <li><a routerLink="/education" routerLinkActive="active">Education</a></li>
-          <li><a routerLink="/experience" routerLinkActive="active">Experience</a></li>
-          <li><a routerLink="/projects" routerLinkActive="active">Projects</a></li>
-          <li><a routerLink="/research" routerLinkActive="active">Research</a></li>
-          <li><a routerLink="/contact" routerLinkActive="active">Contact</a></li>
-        </ul>
-      </nav>
-      
-      <router-outlet></router-outlet>
+
+    <div class="download-resume flex justify-content-center">
+      <p-button
+        size="large"
+        [outlined]="true"
+        (click)="playClickSound()"
+        severity="contrast"
+        [rounded]="true"
+      >
+        Download My Resume
+      </p-button>
     </div>
+
+    <nav>
+      <ul>
+        <li>
+          <a
+            routerLink="/about"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/education"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Education</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/experience"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Experience</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/projects"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/research"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Research</a
+          >
+        </li>
+        <li>
+          <a
+            routerLink="/contact"
+            routerLinkActive="active"
+            (click)="playClickSound()"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
   </div>
+</div>

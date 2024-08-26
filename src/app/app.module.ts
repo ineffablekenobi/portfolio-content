@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +17,11 @@ import { ContactComponent } from './contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
+import { ButtonModule } from 'primeng/button';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { TooltipModule } from 'primeng/tooltip';
 
 @NgModule({
   declarations: [
@@ -25,7 +33,8 @@ import { TimelineModule } from 'primeng/timeline';
     ExperienceComponent,
     ProjectsComponent,
     ResearchComponent,
-    ContactComponent
+    ContactComponent,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,10 +43,11 @@ import { TimelineModule } from 'primeng/timeline';
     AppRoutingModule,
     CardModule,
     TimelineModule,
+    ButtonModule,
+    ToastModule,
+    TooltipModule,
   ],
-  providers: [
-    provideClientHydration()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideClientHydration(), MessageService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
