@@ -1,0 +1,71 @@
+.flex-container {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.research-container {
+  padding: 20px;
+  width: 100%;
+}
+
+::ng-deep .p-card {
+  width: 600px;
+  background: #ffffff; // Light gray background
+  border: 2px solid #565d60; // Gray border
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7),
+    1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background: #ffffff; // Slightly lighter gray on hover
+    border-color: #8a8a8a; // Darker gray border on hover
+  }
+}
+
+p.link {
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+
+  &:hover {
+    color: darkblue;
+  }
+}
+
+.p-card-header {
+  background: #a0a0a0; // Gray header background
+  color: #000; // Black text color
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+  border-bottom: 2px solid #808080; // Darker gray bottom border
+}
+
+.card-subtitle {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.header-text {
+  text-align: center;
+  cursor: pointer;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+}
+
+.publication-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center cards horizontally
+  gap: 1rem; // Space between cards
+}
+
+// Media query for responsive design if needed
+@media (max-width: 768px) {
+  .publication-cards {
+    justify-content: center; // Center cards on smaller screens
+  }
+}
