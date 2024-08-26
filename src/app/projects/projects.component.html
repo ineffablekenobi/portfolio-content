@@ -3,9 +3,10 @@
 
   <div class="project-container">
     <div class="project-cards">
-      <p-card *ngFor="let project of projects">
+      <p-card (click)="goToProject(project)" *ngFor="let project of projects">
         <h2 class="header-text">{{ project.title }}</h2>
         <h4 class="card-subtitle">{{ project.affiliation }}</h4>
+        <p class="project-desc">{{ project.description }}</p>
         <ul class="project-details">
           <li *ngFor="let detail of project.details">{{ detail }}</li>
         </ul>
@@ -13,3 +14,4 @@
     </div>
   </div>
 </div>
+<p-toast />

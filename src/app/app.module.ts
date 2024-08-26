@@ -16,6 +16,8 @@ import { CardModule } from 'primeng/card';
 import { TimelineModule } from 'primeng/timeline';
 import { ButtonModule } from 'primeng/button';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -37,10 +39,12 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     AppRoutingModule,
     CardModule,
     TimelineModule,
-    ButtonModule
+    ButtonModule,
+    ToastModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    MessageService
   ],
   bootstrap: [AppComponent]
 })
