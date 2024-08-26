@@ -17,6 +17,6 @@ export class WindowComponent {
 
   onDowloadClick(): void {
     this.playClickSound();
-    window.open('../../assets/Swapnil-Sharma-Sarker-Resume.pdf', '_blank');
+    window.open('assets/Swapnil-Sharma-Sarker-Resume.pdf', '_blank');
   }
 }

@@ -15,7 +15,7 @@ export class ExperienceComponent {
       institution: 'Enosis Solutions',
       title: 'Software Engineer',
       year: 'December 2023 - Present',
-      logo: '../../assets/enosis-logo.png',
+      logo: 'assets/enosis-logo.png',
       location: 'Dhaka, Bangladesh',
       description:
         'Currently, I am a Software Engineer at Enosis Solutions, specializing in full-stack development with a strong focus on backend technologies. My preferred language is Java, where I excel in creating robust and scalable solutions',
