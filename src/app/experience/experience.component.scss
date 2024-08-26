@@ -1,0 +1,78 @@
+.flex-container {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.experience-container {
+  margin: 40px; /* Space between the sidebar and timeline */
+  padding-left: 20px;
+  box-sizing: border-box; /* Ensure padding does not affect the width */
+}
+
+.p-card {
+  max-width: 500px;
+  margin: 20px auto; /* Adds space around each card */
+  padding: 20px; /* Optional: Adds padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  text-align: justify;
+}
+
+::ng-deep {
+  .p-timeline-left .p-timeline-event-content {
+    margin: 20px;
+    margin-top: 0px;
+    max-width: 500px;
+  }
+  .p-timeline-event-opposite {
+    max-width: 250px;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .p-timeline-event-separator {
+    display: none;
+  }
+}
+
+.responsive-image {
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.responsive-image img {
+  width: 100%;
+  max-width: 200px; /* Ensures the image does not exceed 500px */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.header-text {
+  text-align: center;
+  cursor: pointer;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+}
+
+.degree {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+  color: #6c757d;
+}
+
+.education-container {
+  padding: 50px;
+}
+
+.project-container-title {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+}
+
+p {
+  text-align: justify;
+  font-family: "courier-prime", monospace;
+}

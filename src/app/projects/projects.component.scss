@@ -1,0 +1,86 @@
+.flex-container {
+  display: flex;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.project-container{
+    padding: 20px;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; // Space between cards
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center cards horizontally
+  gap: 1rem; // Space between cards
+}
+
+::ng-deep .p-card {
+  width: 600px;
+  background: #ffffff; // Light gray background
+  border: 2px solid #a0a0a0; // Gray border
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7),
+    1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  font-family: "Tahoma", sans-serif; // Typical Windows XP font
+
+  &:hover {
+    background: #e0e0e0; // Slightly lighter gray on hover
+    border-color: #8a8a8a; // Darker gray border on hover
+  }
+}
+
+.p-card-header {
+  background: #a0a0a0; // Gray header background
+  color: #000; // Black text color
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 3px;
+  border-bottom: 2px solid #808080; // Darker gray bottom border
+}
+
+.card-subtitle {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+.project-details {
+  list-style-type: disc;
+  padding-left: 20px;
+
+  li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: justify;
+  }
+}
+
+.header-text {
+  text-align: center;
+  cursor: pointer;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+}
+
+.degree {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+  color: #6c757d;
+}
+
+// Media query for responsive design if needed
+@media (max-width: 768px) {
+  .project-cards {
+    justify-content: center; // Center cards on smaller screens
+  }
+}
