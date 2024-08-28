@@ -1,42 +1,44 @@
 <div class="flex-container">
   <div class="experience-container">
-    <div
-      pTooltip="Click to visit the Instituion Website"
-      *ngFor="let ed of experiences"
-      class="experience-cards"
-    >
-      <div class="degree-list">
-        <h4 class="degree">{{ ed.title }}</h4>
-        <h4 class="degree">{{ ed.year }}</h4>
-      </div>
-      <div class="card-container">
-        <p-card (click)="redirectToInstitution()">
-          <div class="flex flex-column">
-            <h2 class="header-text">
-              {{ ed.institution }}
-            </h2>
-            <h4 class="degree">{{ ed.location }}</h4>
-            <figure class="responsive-image">
-              <img
-                class="flex justify-content-center"
-                [src]="ed.logo"
-                width="100px"
-                height="auto"
-                alt="Institution logo"
-              />
-            </figure>
-          </div>
-          <p>
-            {{ ed.description }}
-          </p>
+    <div class="experience-cards">
+      <div
+        pTooltip="Click to visit the Instituion Website"
+        *ngFor="let ed of experiences"
+        class="experience-details"
+      >
+        <div class="degree-list">
+          <h4 class="degree">{{ ed.title }}</h4>
+          <h4 class="degree">{{ ed.year }}</h4>
+        </div>
+        <div class="card-container">
+          <p-card (click)="redirectToInstitution()">
+            <div class="flex flex-column">
+              <h2 class="header-text">
+                {{ ed.institution }}
+              </h2>
+              <h4 class="degree">{{ ed.location }}</h4>
+              <figure class="responsive-image">
+                <img
+                  class="flex justify-content-center"
+                  [src]="ed.logo"
+                  width="100px"
+                  height="auto"
+                  alt="Institution logo"
+                />
+              </figure>
+            </div>
+            <p>
+              {{ ed.description }}
+            </p>
 
-          <a
-            routerLink="/projects"
-            routerLinkActive="active"
-            (click)="playClickSound()"
-            >See Projects under {{ ed.institution }}</a
-          >
-        </p-card>
+            <a
+              routerLink="/projects"
+              routerLinkActive="active"
+              (click)="playClickSound()"
+              >See Projects under {{ ed.institution }}</a
+            >
+          </p-card>
+        </div>
       </div>
     </div>
   </div>
