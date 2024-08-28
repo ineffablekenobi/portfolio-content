@@ -2,6 +2,26 @@
   width: 30%;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media (max-width: 910px) {
+  .side-nav {
+    width: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 .about-container {
   text-align: justify;
   margin: 15px;

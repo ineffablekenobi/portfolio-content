@@ -37,3 +37,27 @@
     }
   }
 }
+
+@media (max-width: 910px) {
+  .side-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .side-nav-header {
+      flex-direction: row;
+      gap: 10px;
+      justify-content: center;
+    }
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .side-nav-wrapper .side-nav-header {
+    display: none;
+  }
+}

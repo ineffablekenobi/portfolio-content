@@ -25,6 +25,11 @@ footer {
   margin-top: 20px;
 }
 
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
 /* Header style */
 .xp-window-header {
   background-color: #000080; /* Windows XP title bar blue */
@@ -94,8 +99,8 @@ footer {
   color: #333;
 }
 
-@media (max-width: 575.98px) {
-  .social-tab {
-    padding: 5px 10px;
+@media (max-width: 768px) {
+  .social-tabs {
+    display: none;
   }
 }
