@@ -24,6 +24,8 @@
 }
 
 .side-nav-wrapper {
+  width: max-content;
+
   .side-nav-header {
     display: flex;
     justify-content: start;
@@ -41,7 +43,9 @@
 @media (max-width: 910px) {
   .side-nav-wrapper {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    margin: 0px;
 
     .side-nav-header {
       flex-direction: row;

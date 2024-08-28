@@ -1,9 +1,16 @@
 .flex-container {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   gap: 40px;
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.education-container {
+  margin: 40px; /* Space between the sidebar and timeline */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding does not affect the width */
 }
 
 @media (max-width: 910px) {
@@ -16,45 +23,50 @@
     width: 100%;
     justify-content: center;
   }
+
+  .education-container {
+    margin: 20px;
+    width: auto;
+  }
 }
 
-.education-container {
-  padding-left: 20px; /* Space between the sidebar and timeline */
-  box-sizing: border-box; /* Ensure padding does not affect the width */
+.degree-list {
+  display: flex;
+  flex-direction: column;
 }
 
-// .p-card {
-//   max-width: 500px;
-//   margin: 20px auto; /* Adds space around each card */
-//   padding: 20px; /* Optional: Adds padding inside the card */
-//   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-//   border-radius: 8px; /* Optional: Adds rounded corners */
-//   text-align: justify;
-// }
+.education-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.education-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center cards horizontally
+  flex-direction: column;
+  gap: 1rem; // Space between cards
+}
 
 ::ng-deep .p-card {
-  width: 500px;
+  max-width: 600px;
   background: #ffffff; // Light gray background
   border: 2px solid #565d60; // Gray border
   border-radius: 5px;
   box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7),
     1px 1px 3px rgba(0, 0, 0, 0.5);
   padding: 10px;
+  cursor: pointer;
   &:hover {
     background: #ffffff; // Slightly lighter gray on hover
     border-color: #8a8a8a; // Darker gray border on hover
-  }
-}
-
-::ng-deep {
-  .p-timeline-left .p-timeline-event-content {
-    margin: 20px;
-    margin-top: 0px;
-    max-width: 500px;
-  }
-  .p-timeline-event-opposite {
-    max-width: 250px;
-    text-wrap: wrap;
   }
 }
 

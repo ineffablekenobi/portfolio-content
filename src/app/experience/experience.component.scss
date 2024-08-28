@@ -1,9 +1,16 @@
 .flex-container {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   gap: 40px;
   padding-left: 3px;
   padding-right: 3px;
+}
+
+.experience-container {
+  margin: 40px; /* Space between the sidebar and timeline */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding does not affect the width */
 }
 
 @media (max-width: 910px) {
@@ -16,13 +23,16 @@
     width: 100%;
     justify-content: center;
   }
+
+  .experience-container {
+    margin: 20px;
+    width: auto;
+  }
 }
 
-
-.experience-container {
-  margin: 40px; /* Space between the sidebar and timeline */
-  padding-left: 20px;
-  box-sizing: border-box; /* Ensure padding does not affect the width */
+.card-container {
+  display: flex;
+  justify-content: center;
 }
 
 ::ng-deep .p-card {
@@ -40,22 +50,18 @@
   }
 }
 
-::ng-deep {
-  .p-timeline-left .p-timeline-event-content {
-    margin: 20px;
-    margin-top: 0px;
-    max-width: 500px;
-  }
-  .p-timeline-event-opposite {
-    max-width: 250px;
-    text-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .p-timeline-event-separator {
-    display: none;
-  }
+.degree-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center cards horizontally
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem; // Space between cards
 }
 
 .responsive-image {
@@ -82,10 +88,6 @@
   text-align: center;
   font-family: "lores-15-bold-alt-oakland", monospace;
   color: #6c757d;
-}
-
-.education-container {
-  padding: 50px;
 }
 
 .project-container-title {

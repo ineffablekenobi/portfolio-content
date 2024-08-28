@@ -1,32 +1,32 @@
 <div class="flex-container">
-
-
   <div class="education-container">
-    <p-timeline [value]="education">
-      <ng-template pTemplate="content" let-ed>
-        <p-card>
-          <div class="flex flex-column">
-            <h2 class="header-text">{{ ed.institution }}</h2>
-            <figure class="responsive-image">
-              <img
-                class="flex justify-content-center"
-                [src]="ed.logo"
-                width="100px"
-                height="auto"
-                alt="Instituion log"
-              />
-            </figure>
-          </div>
-          <p>
-            {{ ed.description }}
-          </p>
-        </p-card>
-      </ng-template>
-      <ng-template pTemplate="opposite" let-ed>
-        <h4 class="degree">{{ ed.title }}</h4>
-        <h4 class="degree">{{ ed.year }}</h4>
-      </ng-template>
-    </p-timeline>
+    <div class="education-cards">
+      <div *ngFor="let ed of education" class="eduacation-detail">
+        <div class="degree-list">
+          <h4 class="degree">{{ ed.title }}</h4>
+          <h4 class="degree">{{ ed.year }}</h4>
+        </div>
+        <div class="card-container">
+          <p-card>
+            <div class="flex flex-column">
+              <h2 class="header-text">{{ ed.institution }}</h2>
+              <figure class="responsive-image">
+                <img
+                  class="flex justify-content-center"
+                  [src]="ed.logo"
+                  width="100px"
+                  height="auto"
+                  alt="Instituion log"
+                />
+              </figure>
+            </div>
+            <p>
+              {{ ed.description }}
+            </p>
+          </p-card>
+        </div>
+      </div>
+    </div>
   </div>
   <app-side-nav class="side-nav"></app-side-nav>
 </div>
