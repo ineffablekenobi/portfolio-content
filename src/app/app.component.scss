@@ -123,13 +123,24 @@ footer {
   .social-tab {
     padding: 10px 2px;
   }
+
+  .xp-window {
+    width: 98vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-tab {
+    padding: 10px 2px;
+  }
+
+  .xp-window {
+    width: 95vw;
+  }
 }
 
 @media (max-width: 380px) {
   .social-tab {
     padding: 0px;
-  }
-  .xp-close-btn {
-    display: none;
   }
 }
