@@ -54,3 +54,17 @@ h2 {
   font-family: "courier-prime", monospace;
   font-weight: bold;
 }
+
+@media (max-width: 598px) {
+  .xp-window nav ul {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}

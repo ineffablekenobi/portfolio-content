@@ -25,13 +25,18 @@ footer {
   margin-top: 20px;
 }
 
+.wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
 /* Header style */
 .xp-window-header {
   background-color: #000080; /* Windows XP title bar blue */
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   height: max-content;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   border-bottom: 2px solid #808080; /* Adds a subtle border to the bottom */
@@ -64,16 +69,24 @@ footer {
   width: 20%;
   display: flex;
   justify-content: start;
+  height: 100%;
+  align-items: center;
 }
 
 .xp-close-btn-wrapper {
   width: 20%;
   display: flex;
   justify-content: end;
+  height: 100%;
+  align-items: center;
 }
 
 .social-tabs {
   font-family: "lores-15-bold-alt-oakland", monospace;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: end;
 }
 
 .social-tab {
@@ -94,8 +107,29 @@ footer {
   color: #333;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 768px) {
+  .social-text {
+    display: none;
+  }
+
   .social-tab {
-    padding: 5px 10px;
+    i {
+      padding: 10px;
+    }
+  }
+}
+
+@media (max-width: 510px) {
+  .social-tab {
+    padding: 10px 2px;
+  }
+}
+
+@media (max-width: 380px) {
+  .social-tab {
+    padding: 0px;
+  }
+  .xp-close-btn {
+    display: none;
   }
 }

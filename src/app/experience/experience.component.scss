@@ -1,17 +1,42 @@
 .flex-container {
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 40px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .experience-container {
   margin: 40px; /* Space between the sidebar and timeline */
-  padding-left: 20px;
+  width: 100%;
   box-sizing: border-box; /* Ensure padding does not affect the width */
 }
 
+@media (max-width: 910px) {
+  .side-nav {
+    width: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .experience-container {
+    margin: 20px;
+    width: auto;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
 ::ng-deep .p-card {
-  width: 600px;
+  max-width: 600px;
   background: #ffffff; // Light gray background
   border: 2px solid #565d60; // Gray border
   border-radius: 5px;
@@ -25,23 +50,18 @@
   }
 }
 
+.degree-list {
+  display: flex;
+  flex-direction: column;
+}
 
-::ng-deep {
-  .p-timeline-left .p-timeline-event-content {
-    margin: 20px;
-    margin-top: 0px;
-    max-width: 500px;
-  }
-  .p-timeline-event-opposite {
-    max-width: 250px;
-    text-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .p-timeline-event-separator {
-    display: none;
-  }
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center cards horizontally
+  width: 100%;
+  flex-direction: column;
+  gap: 40px; // Space between cards
 }
 
 .responsive-image {
@@ -68,10 +88,6 @@
   text-align: center;
   font-family: "lores-15-bold-alt-oakland", monospace;
   color: #6c757d;
-}
-
-.education-container {
-  padding: 50px;
 }
 
 .project-container-title {

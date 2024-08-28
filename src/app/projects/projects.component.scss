@@ -1,7 +1,21 @@
 .flex-container {
   display: flex;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  flex-direction: row-reverse;
+  gap: 40px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media (max-width: 910px) {
+  .side-nav {
+    width: 100%;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .project-container {
@@ -16,7 +30,7 @@
 }
 
 ::ng-deep .p-card {
-  width: 600px;
+  max-width: 600px;
   background: #ffffff; // Light gray background
   border: 2px solid #565d60; // Gray border
   border-radius: 5px;
