@@ -13,13 +13,13 @@ export class SoundService {
   }
 
   playClickSound() {
-    if (this.audio) {
-      this.audio.currentTime = 0;
-      this.audio
-        .play()
-        .catch((error) => console.error('Error playing audio:', error));
-    } else {
-      console.warn('Audio playback is not supported in this environment');
-    }
+    // if (this.audio) {
+    //   this.audio.currentTime = 0;
+    //   this.audio
+    //     .play()
+    //     .catch((error) => console.error('Error playing audio:', error));
+    // } else {
+    //   console.warn('Audio playback is not supported in this environment');
+    // }
   }
 }
