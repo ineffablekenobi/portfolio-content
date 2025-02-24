@@ -28,6 +28,15 @@ export class ResearchComponent {
     },
     {
       title:
+        'Real-Time Tea Leaf Disease Detection Using Deep Learning-Based Models',
+      type: 'Conference Paper',
+      affiliation: 'International Conference on Computer and Information Technology',
+      summary:
+        'Tea leaf diseases pose a significant threat to crop productivity, highlighting the need for efficient and accurate detection methods. The lack of cost-effective, lightweight models for deployment on end devices limits real-time detection. This study addressed this by annotating and utilizing the previously unlabeled Tea Sickness Dataset for object detection and deploying fine-tuned models on mobile devices. The YOLO-NAS-s, YOLOv8n, YOLOv5nu, and SSD-MobileNetV2 models were finetuned using this dataset to detect diseased tea leaves, achieving state-of-the-art performance. Among them, YOLOv5nu achieved a maximum mAP@ 50 of 0.969 and an F1-score of 0.927, demonstrating exceptional accuracy. Its lightweight architecture ensures fast inference and low resource usage, offering a balance between performance and computational efficiency, making it well-suited for real-time deployment. After the models were evaluated, the two most lightweight models were deployed on mobile devices, demonstrating the feasibility of using high-performance and lightweight models for real-time plant disease monitoring.',
+      link: 'https://www.researchgate.net/profile/Ashiqul-Islam-6/publication/387501552_Real-Time_Tea_Leaf_Disease_Detection_Using_Deep_Learning-Based_Models/links/6770f54e894c55208531749f/Real-Time-Tea-Leaf-Disease-Detection-Using-Deep-Learning-Based-Models.pdf',
+    },
+    {
+      title:
         'An Empirical Analysis of Different Protein Folding Algorithms on Cytokine Protein Structure',
       type: 'Conference Paper',
       affiliation: 'SARC International Conference',
