@@ -22,6 +22,6 @@ jobs:
 
       - name: Deploy to GitHub Pages 🚀
         # Notice the updated base-href. No repository name is needed.
-        run: npx angular-cli-ghpages --base-href=/
+        run: npx angular-cli-ghpages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
