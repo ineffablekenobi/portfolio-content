@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies 📦
         run: npm install
 
+      - name: Build Angular app 🛠️
+        run: npm run build -- --configuration production
+
       - name: Deploy to GitHub Pages 🚀
         # Notice the updated base-href. No repository name is needed.
         run: npx angular-cli-ghpages --dir=dist/
