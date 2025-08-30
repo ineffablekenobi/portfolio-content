@@ -18,6 +18,13 @@ export interface Publication {
 export class ResearchComponent {
   publications: Publication[] = [
     {
+      title: 'Automated and Context-Aware Code Documentation Leveraging Advanced LLMs',
+      type: 'Conference Paper',
+      affiliation: 'INLG 2025 (Camera-ready Submission)',
+      summary: 'Code documentation is essential for improving software maintainability and comprehension. The tedious nature of manual code documentation has led to extensive research on automated documentation generation. Existing automated approaches have primarily focused on code summarization, leaving a gap in template-based documentation generation (e.g., Javadoc), particularly with publicly available Large Language Models (LLMs).\n\nFurthermore, progress in this area has been hindered by the lack of a Javadoc-specific dataset that incorporates modern language features, provides broad framework/library coverage, and includes necessary contextual information. This study aims to address these gaps by developing a tailored dataset and assessing the capabilities of publicly available LLMs for context-aware, template-based Javadoc generation.\n\nIn this work, we present a novel, context-aware dataset for Javadoc generation that includes critical structural and semantic information from modern Java codebases. We evaluate five open-source LLMs (including LLaMA-3.1, Gemma-2, Phi-3, Mistral, and Qwen-2.5) using zero-shot, few-shot, and fine-tuned setups, and provide a comparative analysis of their performance.\n\nOur results demonstrate that LLaMA-3.1 performs consistently well and is a reliable candidate for practical, automated Javadoc generation, offering a viable alternative to proprietary systems.',
+      link: 'https://drive.google.com/file/d/15oge_AVAqwwnoYZae7AQQ3Wrz22lb2XF/view?usp=drive_link'
+    },
+    {
       title:
         'Performance Analysis of Deep Learning Models on Chemokines Protein Group Using Structure-Based Pattern Detection',
       type: 'Book Chapter',
