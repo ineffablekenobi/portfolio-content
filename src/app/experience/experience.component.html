@@ -1,15 +1,14 @@
 <div class="flex-container">
   <div class="experience-container">
-    <div class="resume-section">
-      <div class="section-title">
-        <h2>Experience</h2>
-        <hr class="title-divider" />
-      </div>
-
-      <div *ngFor="let ed of experiences" class="experience-item">
-        <div class="job-header">
-          <div class="job-title">{{ ed.title }}</div>
-          <div class="job-duration">{{ ed.duration }}</div>
+    <div class="experience-cards">
+      <div
+        pTooltip="Click to visit the Instituion Website"
+        *ngFor="let ed of experiences"
+        class="experience-details"
+      >
+        <div class="degree-list">
+          <h4 class="degree">{{ ed.title }}</h4>
+          <h4 class="degree">{{ ed.year }}</h4>
         </div>
         <div class="card-container">
           <p-card (click)="redirectToInstitution()">
@@ -19,8 +18,13 @@
               </h2>
               <h4 class="degree">{{ ed.location }}</h4>
               <figure class="responsive-image">
-                <img class="flex justify-content-center" [src]="ed.logo" width="100px" height="auto"
-                  alt="Institution logo" />
+                <img
+                  class="flex justify-content-center"
+                  [src]="ed.logo"
+                  width="100px"
+                  height="auto"
+                  alt="Institution logo"
+                />
               </figure>
             </div>
             <ul class="description-bullets">
@@ -29,13 +33,14 @@
               </li>
             </ul>
 
-            <a routerLink="/projects" routerLinkActive="active" (click)="playClickSound()">See Projects under {{
-              ed.institution }}</a>
+            <a
+              routerLink="/projects"
+              routerLinkActive="active"
+              (click)="playClickSound()"
+              >See Projects under {{ ed.institution }}</a
+            >
           </p-card>
         </div>
-        <ul class="job-description">
-          <li *ngFor="let bullet of ed.descriptionBullets">{{ bullet }}</li>
-        </ul>
       </div>
     </div>
   </div>
