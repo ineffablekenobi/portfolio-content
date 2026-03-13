@@ -13,14 +13,32 @@ export class ExperienceComponent {
   experiences = [
     {
       institution: 'Enosis Solutions',
-      title: 'Software Engineer',
-      year: 'December 2023 - Present',
+      title: 'Senior Software Engineer',
+      year: 'Sep 2025 - Present',
       logo: 'assets/enosis-logo.png',
       location: 'Dhaka, Bangladesh',
-      description:
-        'Currently, I am a Software Engineer at Enosis Solutions, specializing in full-stack development with a strong focus on backend technologies. My preferred language is Java, where I excel in creating robust and scalable solutions',
+      descriptionBullets: [
+        'Lead code reviews and set code-quality expectations to improve delivery and reduce defects',
+        'Established development policies with QA and Dev teams to improve cross-team clarity and reduce rework',
+        'Guided and executed database migrations and platform version upgrades, minimizing downtime and data risk',
+        'Recovered production-impacting mistakes in GitHub (branch/merge recovery, hotfix workflows) and documented recovery processes for the team',
+        'Anticipated major requirement and feasibility issues, enabling early resolutions that prevented critical development-stage problems'
+      ]
     },
-    // Add more experiences as needed
+    {
+      institution: 'Enosis Solutions',
+      title: 'Software Engineer',
+      year: 'Dec 2023 - Aug 2025',
+      logo: 'assets/enosis-logo.png',
+      location: 'Dhaka, Bangladesh',
+      descriptionBullets: [
+        'Designed and implemented scalable microservices using Spring Boot; applied patterns such as Builder, Facade, Chain of Responsibility, and Unit of Work',
+        'Automated CI/CD pipelines using Jenkins, ArgoCD and Kubernetes to ensure repeatable, reliable deployments',
+        'Developed and maintained RESTful APIs (RestEasy); integrated AWS services including S3 and DynamoDB for cloud data management',
+        'Improved concurrency and transaction management across services, enhancing reliability and performance',
+        'Collaborated with cross-functional teams to troubleshoot production issues, implement schedulers/cron jobs, and deliver reusable libraries'
+      ]
+    }
   ];
 
   constructor(private eventBus: EventBusService) {}

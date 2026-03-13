@@ -27,9 +27,11 @@
                 />
               </figure>
             </div>
-            <p>
-              {{ ed.description }}
-            </p>
+            <ul class="description-bullets">
+              <li *ngFor="let bullet of ed.descriptionBullets">
+                {{ bullet }}
+              </li>
+            </ul>
 
             <a
               routerLink="/projects"
