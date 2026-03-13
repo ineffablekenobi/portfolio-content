@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { SoundService } from '../services/sound.service';
-import { EventBusService } from '../services/event-bus.service';
-import { Subscription } from 'rxjs';
-import { EVENT_NAMES } from '../constants/event-constants';
 
 @Component({
   selector: 'app-experience',
@@ -41,7 +37,7 @@ export class ExperienceComponent {
     }
   ];
 
-  constructor(private eventBus: EventBusService) {}
+  constructor(private eventBus: EventBusService) { }
 
   playClickSound(): void {
     this.eventBus.cast(EVENT_NAMES.CLICK);
