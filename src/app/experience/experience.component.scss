@@ -91,3 +91,13 @@
   line-height: 1.4;
   text-align: left;
 }
+
+.description-bullets {
+  text-align: justify;
+  font-family: "courier-prime", monospace;
+  padding-left: 20px;
+}
+
+.description-bullets li {
+  margin-bottom: 8px;
+}

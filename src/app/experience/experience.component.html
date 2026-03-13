@@ -11,9 +11,27 @@
           <div class="job-title">{{ ed.title }}</div>
           <div class="job-duration">{{ ed.duration }}</div>
         </div>
-        <div class="company-header">
-          <div class="company-name">{{ ed.company }}</div>
-          <div class="company-location">{{ ed.location }}</div>
+        <div class="card-container">
+          <p-card (click)="redirectToInstitution()">
+            <div class="flex flex-column">
+              <h2 class="header-text">
+                {{ ed.institution }}
+              </h2>
+              <h4 class="degree">{{ ed.location }}</h4>
+              <figure class="responsive-image">
+                <img class="flex justify-content-center" [src]="ed.logo" width="100px" height="auto"
+                  alt="Institution logo" />
+              </figure>
+            </div>
+            <ul class="description-bullets">
+              <li *ngFor="let bullet of ed.descriptionBullets">
+                {{ bullet }}
+              </li>
+            </ul>
+
+            <a routerLink="/projects" routerLinkActive="active" (click)="playClickSound()">See Projects under {{
+              ed.institution }}</a>
+          </p-card>
         </div>
         <ul class="job-description">
           <li *ngFor="let bullet of ed.descriptionBullets">{{ bullet }}</li>

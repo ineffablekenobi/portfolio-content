@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 export class ExperienceComponent {
   experiences = [
     {
+      institution: 'Enosis Solutions',
       title: 'Senior Software Engineer',
-      duration: 'Sep 2025 - Present',
-      company: 'Enosis Solutions',
-      location: 'Dhaka, Bangladesh (Hybrid)',
+      year: 'Sep 2025 - Present',
+      logo: 'assets/enosis-logo.png',
+      location: 'Dhaka, Bangladesh',
       descriptionBullets: [
         'Lead code reviews and set code-quality expectations to improve delivery and reduce defects',
         'Established development policies with QA and Dev teams to improve cross-team clarity and reduce rework',
@@ -21,10 +22,11 @@ export class ExperienceComponent {
       ]
     },
     {
+      institution: 'Enosis Solutions',
       title: 'Software Engineer',
-      duration: 'Dec 2023 - Aug 2025',
-      company: 'Enosis Solutions',
-      location: 'Dhaka, Bangladesh (Hybrid)',
+      year: 'Dec 2023 - Aug 2025',
+      logo: 'assets/enosis-logo.png',
+      location: 'Dhaka, Bangladesh',
       descriptionBullets: [
         'Designed and implemented scalable microservices using Spring Boot; applied patterns such as Builder, Facade, Chain of Responsibility, and Unit of Work',
         'Automated CI/CD pipelines using Jenkins, ArgoCD and Kubernetes to ensure repeatable, reliable deployments',
@@ -35,5 +37,15 @@ export class ExperienceComponent {
     }
   ];
 
-  constructor() {}
+  constructor(private eventBus: EventBusService) { }
+
+  playClickSound(): void {
+    this.eventBus.cast(EVENT_NAMES.CLICK);
+  }
+
+  redirectToInstitution(): void {
+    this.playClickSound();
+    const url = 'https://www.enosisbd.com/';
+    window.open(url, '_blank'); // Opens the URL in a new tab
+  }
 }
