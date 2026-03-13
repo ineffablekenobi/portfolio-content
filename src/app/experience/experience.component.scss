@@ -30,66 +30,74 @@
   }
 }
 
-.resume-section {
-  max-width: 900px;
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+::ng-deep .p-card {
+  max-width: 600px;
+  background: #ffffff; // Light gray background
+  border: 2px solid #565d60; // Gray border
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 3px rgba(255, 255, 255, 0.7),
+    1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  &:hover {
+    background: #ffffff; // Slightly lighter gray on hover
+    border-color: #8a8a8a; // Darker gray border on hover
+  }
+}
+
+.degree-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // Center cards horizontally
   width: 100%;
-  margin: 0 auto;
-  /* Use inherit or standard text color suitable for the app body */
+  flex-direction: column;
+  gap: 40px; // Space between cards
 }
 
-.section-title h2 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  margin-bottom: 5px;
-  margin-top: 0;
+.responsive-image {
+  max-width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
 }
 
-.title-divider {
-  border: none;
-  border-top: 1px solid currentColor;
-  margin-top: 0;
-  margin-bottom: 15px;
+.responsive-image img {
+  width: 100%;
+  max-width: 200px; /* Ensures the image does not exceed 500px */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
-.experience-item {
-  margin-bottom: 25px;
+.header-text {
+  text-align: center;
+  cursor: pointer;
+  font-family: "lores-15-bold-alt-oakland", monospace;
 }
 
-.job-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: 1.1rem;
+.degree {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
+  color: #6c757d;
 }
 
-.job-title {
-  font-weight: 600;
+.project-container-title {
+  text-align: center;
+  font-family: "lores-15-bold-alt-oakland", monospace;
 }
 
-.job-duration {
-  font-weight: normal;
-}
-
-.company-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: 1rem;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-
-.job-description {
-  margin-top: 0;
-  padding-left: 25px;
-  margin-bottom: 0;
-}
-
-.job-description li {
-  margin-bottom: 6px;
-  font-size: 0.95rem;
-  line-height: 1.4;
-  text-align: left;
+p {
+  text-align: justify;
+  font-family: "courier-prime", monospace;
 }
 
 .description-bullets {
