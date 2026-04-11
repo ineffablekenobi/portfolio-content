@@ -20,6 +20,22 @@ export interface Project {
 export class ProjectsComponent {
   projects: Project[] = [
     {
+      title: 'Optimizely Analytics (NetSpring)',
+      description:
+        'A warehouse-native analytics platform that ingests streaming and batch data, normalizes it into queryable datasets, and powers real-time dashboards, metrics, and alerts.',
+      affiliation: 'Optimizely',
+      gitLink: '',
+      details: [
+        'Data Loader built with Apache Beam ingests from Kafka and S3 into an optimized Data Cache with multiple manifestations (partitioned, denormalized, pre-aggregated)',
+        'SQL Engine built on Presto with a custom connector; query rewriting via Apache Calcite routes queries to optimal data manifestations',
+        'Metric Processor supports incremental evaluation for live dashboards and continuous rule/alert evaluation with parameterized actions (Slack, PagerDuty, webhooks)',
+        'Derived datasets (SQL views) abstract join complexity, enabling business users to define metrics over single datasets',
+        'BPM Server built with Golang and GraphQL; React and TypeScript frontend with live updates via websockets',
+        'Search Index powers autocomplete and discovery for metric definitions; Metadata Store on relational DB (Aurora/Cloud SQL)',
+      ],
+    },
+
+    {
       title: 'Community Voting System',
       description:
         'A voting system, which is a part of a community management system. Admins can host votes/polls/surveys and residents can vote.',

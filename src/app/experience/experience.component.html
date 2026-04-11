@@ -11,7 +11,7 @@
           <h4 class="degree">{{ ed.year }}</h4>
         </div>
         <div class="card-container">
-          <p-card (click)="redirectToInstitution()">
+          <p-card (click)="redirectToInstitution(ed.institution)">
             <div class="flex flex-column">
               <h2 class="header-text">
                 {{ ed.institution }}
