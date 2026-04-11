@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'Swapnil Sharma Sarker - Enosis';
+  title = 'Swapnil Sharma Sarker - Optimizely';
 
   private subscriptions: Subscription;
 

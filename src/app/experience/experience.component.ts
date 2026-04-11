@@ -12,9 +12,22 @@ import { EVENT_NAMES } from '../constants/event-constants';
 export class ExperienceComponent {
   experiences = [
     {
+      institution: 'Optimizely',
+      title: 'Software Engineer II',
+      year: 'Mar 2026 - Present',
+      logo: 'assets/optimizely-logo.png',
+      location: 'Dhaka, Bangladesh',
+      descriptionBullets: [
+        'Worked on security issues to strengthen platform integrity',
+        'Resolved critical bug fixes across the product',
+        'Contributed to the warehouse native analytics solution',
+        'Identified data leak over multiple threads and used decorators to prevent the situation by propagating context'
+      ]
+    },
+    {
       institution: 'Enosis Solutions',
       title: 'Senior Software Engineer',
-      year: 'Sep 2025 - Present',
+      year: 'Sep 2025 - Mar 2026',
       logo: 'assets/enosis-logo.png',
       location: 'Dhaka, Bangladesh',
       descriptionBullets: [
@@ -47,9 +60,13 @@ export class ExperienceComponent {
     this.eventBus.cast(EVENT_NAMES.CLICK);
   }
 
-  redirectToInstitution(): void {
+  redirectToInstitution(institution: string): void {
     this.playClickSound();
-    const url = 'https://www.enosisbd.com/';
-    window.open(url, '_blank'); // Opens the URL in a new tab
+    const urls: Record<string, string> = {
+      'Optimizely': 'https://www.optimizely.com/',
+      'Enosis Solutions': 'https://www.enosisbd.com/'
+    };
+    const url = urls[institution] || 'https://www.enosisbd.com/';
+    window.open(url, '_blank');
   }
 }
